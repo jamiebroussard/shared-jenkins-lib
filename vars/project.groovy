@@ -13,7 +13,7 @@ class project {
   static String dev_region          = "us-east-1"
   static String prod_region         = "us-east-1"
   static String produswest_region   = ""
-  static String produseast_region   = ""
+  static String produseast_region   = "us-east-1"
   static String build_notify        = "jamie@jamiebroussard.com"
   static String region              = "us-east-1"
 }
