@@ -38,7 +38,9 @@ def deploy_old_prod( yamlfile, type = 'k8' ) {
 def deploy_prod( yamlfile, type = 'k8' ) {
   if ( type == "k8" ) {
     // Deploy to main region
-    aws.updateKubeConfig2(project.produseast_region, project.prod_cluster, project.prod_profile)
+    sh "export AWS_PROFILE=jdbroussard"
+    sh "aws eks update-kubeconfig --region us-east-1 --name jdbroussard"
+    //aws.updateKubeConfig2(project.produseast_region, project.prod_cluster, project.prod_profile)
     sh "kubectl apply -f ${yamlfile}"
     // Deploy to DR region
   }
