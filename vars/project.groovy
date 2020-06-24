@@ -1,10 +1,10 @@
 class project {
   static String dev_aws_account     = "665900821133"
   static String prod_aws_account    = ""
-  static String dev_cluster         = "jbroussard-demo"
+  static String dev_cluster         = "jbroussard"
   static String qa_cluster          = ""
   static String stage_cluster       = ""
-  static String prod_cluster        = "jbroussard-demo"
+  static String prod_cluster        = "jbroussard"
   static String stageuswest_cluster = ""
   static String old_prod_cluster    = ""
   static String dev_profile         = "jbroussard-dev"
